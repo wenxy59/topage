@@ -8,7 +8,6 @@ import News, { NewsItem } from '@/components/home/News';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
-import ClustrMaps from '@/components/home/ClustrMaps';
 
 import { Publication } from '@/types/publication';
 import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig } from '@/types/page';
@@ -135,15 +134,12 @@ export default function Home() {
 
         {/* Left Column - Profile */}
         <div className="lg:col-span-1">
-          <div className="lg:sticky lg:top-8 space-y-6">
-            <Profile
-              author={config.author}
-              social={config.social}
-              features={config.features}
-              researchInterests={researchInterests}
-            />
-            <ClustrMaps />
-          </div>
+          <Profile
+            author={config.author}
+            social={config.social}
+            features={config.features}
+            researchInterests={researchInterests}
+          />
         </div>
 
         {/* Right Column - Content */}
