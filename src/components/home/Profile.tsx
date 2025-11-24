@@ -351,6 +351,49 @@ export default function Profile({ author, social, features, researchInterests }:
                     </div>
                 </div>
             )}
+
+            {/* Visitor Map - Only show on production */}
+            <VisitorMap />
         </motion.div>
+    );
+}
+
+// Visitor Map Component
+function VisitorMap() {
+    useEffect(() => {
+        // Only load on the production domain
+        if (typeof window !== 'undefined' && window.location.hostname === 'wenxy.pages.dev') {
+            // Check if script is already loaded
+            if (document.getElementById('clustrmaps')) {
+                return;
+            }
+
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.id = 'clustrmaps';
+            script.src = '//clustrmaps.com/map_v2.js?d=EVaQJ-TTkJcolRghSw5ItnC1jofI6PMAIl8-7qzVPXQ&cl=ffffff&w=a';
+            script.async = true;
+
+            const container = document.getElementById('clustrmaps-container');
+            if (container) {
+                container.appendChild(script);
+            }
+        }
+    }, []);
+
+    // Only render on production domain
+    if (typeof window !== 'undefined' && window.location.hostname !== 'wenxy.pages.dev') {
+        return null;
+    }
+
+    return (
+        <div className="mt-6 flex justify-center">
+            <div 
+                id="clustrmaps-container" 
+                className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-4 hover:shadow-lg transition-all duration-200"
+            >
+                {/* The script will inject the map here */}
+            </div>
+        </div>
     );
 }

@@ -45,28 +45,30 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
         notFound();
     }
 
+    // Load data on the server side based on page type
+    let content: string | undefined;
+    let publications: ReturnType<typeof parseBibTeX> | undefined;
+
+    if (pageConfig.type === 'text') {
+        const textConfig = pageConfig as TextPageConfig;
+        content = getMarkdownContent(textConfig.source);
+    } else if (pageConfig.type === 'publication') {
+        const pubConfig = pageConfig as PublicationPageConfig;
+        const bibtex = getBibtexContent(pubConfig.source);
+        publications = parseBibTeX(bibtex);
+    }
+
     return (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            {pageConfig.type === 'publication' && (
-                <PublicationPage config={pageConfig as PublicationPageConfig} />
+            {pageConfig.type === 'publication' && publications && (
+                <PublicationsList config={pageConfig as PublicationPageConfig} publications={publications} />
             )}
-            {pageConfig.type === 'text' && (
-                <TextPageWrapper config={pageConfig as TextPageConfig} />
+            {pageConfig.type === 'text' && content !== undefined && (
+                <TextPage config={pageConfig as TextPageConfig} content={content} />
             )}
             {pageConfig.type === 'card' && (
                 <CardPage config={pageConfig as CardPageConfig} />
             )}
         </div>
     );
-}
-
-function PublicationPage({ config }: { config: PublicationPageConfig }) {
-    const bibtex = getBibtexContent(config.source);
-    const publications = parseBibTeX(bibtex);
-    return <PublicationsList config={config} publications={publications} />;
-}
-
-function TextPageWrapper({ config }: { config: TextPageConfig }) {
-    const content = getMarkdownContent(config.source);
-    return <TextPage config={config} content={content} />;
 }
