@@ -1,5 +1,3 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
+I will receive my **B.Eng** degree in **ECE** from **Sun Yat-sen University** fall 2026. Previously, I worked with **[Prof. Neal Bangerter](https://profiles.imperial.ac.uk/n.bangerter)** from **Imperial College London** and **[Prof. Kaixiong Zhou](https://kaixiong-zhou.github.io/)** in **North Carolina State University**. My research interests include **AI4Science**, **Large Language Models**, and their applications in **synthetic biology and cells**.
 
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+Besides, I served as President of **IST (Information Science & Technology Developing Center for SYSU Students)** from 2023.9 to 2025.9, leading the organization to host multiple national-level competitions and establishing it as a prominent technical club at the university.
