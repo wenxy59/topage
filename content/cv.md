@@ -4,12 +4,14 @@
 
 - Advisor: Prof. Xiang Chen
 
-## Experience
+## Internship Experience
 
 **Research Internship**, **[Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/)**, *2025.11 – Present*
 
 - Mentor: Zhangyang Gao
 - Single Cell LLMs.
+
+## Research Experience
 
 **Research Internship**, **[North Carolina State University](https://www.ncsu.edu/)**, *2025.7 – Present*
 
