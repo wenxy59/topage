@@ -8,12 +8,12 @@
 
 **Research Internship**, **[Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/)**, *2025.11 – Present*
 
-- Mentor: Zhangyang Gao
-- Single Cell LLMs.
+- Advisor: Zhangyang Gao
+- Single Cell Foundation Models and Benchmarks.
 
 ## Research Experience
 
-**Research Internship**, **[North Carolina State University](https://www.ncsu.edu/)**, *2025.7 – Present*
+**Research Assistant**, **[North Carolina State University](https://www.ncsu.edu/)**, *2025.7 – Present*
 
 - Advisor: Prof. Kaixiong Zhou
 - Graph Transformers for RNA inverse Folding.
@@ -23,14 +23,14 @@
 - Tomorrow Space Network Interdisciplinary Innovation Group
 - AI-Core and 5G Core Networks.
 
-**Research Assistant**, **[Imperial College London](https://www.imperial.ac.uk/)**, *2024.12 – 2025.3*
+**Research Internship**, **[Imperial College London](https://www.imperial.ac.uk/)**, *2024.12 – 2025.3*
 
 - Advisor: Prof. Neal Bangerter
 - Deep Learning in Neuroscience and EEG Denoising. 
 
 ## Awards & Honors
 
-**Sun Yat-sen University Outstanding Student Scholarship**, *2023*
+**Sun Yat-sen University Outstanding Student Scholarship**, *2023*, *2024*
 
 **Third Prize in Guangdong Province**, National Undergraduate Electronic Design Contest, *2023*
 
