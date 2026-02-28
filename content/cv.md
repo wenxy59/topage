@@ -20,8 +20,8 @@
 
 **Research Assistant**, **[Tsinghua University](https://www.tsinghua.edu.cn/)**, *2025.2 – 2025.5*
 
-- Tomorrow Space Network Interdisciplinary Innovation Group
-- AI-Core and 5G Distributed Core Networks.
+- Tomorrow Network Interdisciplinary Innovation Group
+- Resource Allocation in Distributed Systems and AI-Core.
 
 **Research Assistant**, **[Imperial College London](https://www.imperial.ac.uk/)**, *2024.12 – 2025.3*
 
@@ -35,7 +35,3 @@
 **Third Prize in Guangdong Province**, National Undergraduate Electronic Design Contest, *2023*
 
 **Second Prize in South China Region**, National Undergraduate Electronic Design Contest, *2024*
-
-**Second Prize in South China Region**, China College IC Competition, *2024*
-
-**Third Prize in Guangdong Province**, National College Student Mobile Communication 5G Technology Competition, *2025*
